@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #6a0dad 0%, #8e2de2 100%);
+    padding: 25px 0;
+    box-shadow: 0 4px 15px rgba(106, 13, 173, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 4px;
+    position: relative;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+header .btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(245, 87, 108, 0.3);
+}
+
+header .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+}
+
+/* Section Styles */
+section {
+    padding: 60px 40px;
+    margin: 20px auto;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    max-width: 1200px;
+}
+
+section h1 {
+    font-size: 2.5em;
+    color: #6a0dad;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #8e2de2;
+    margin: 20px 0 15px 0;
+    font-weight: 600;
+}
+
+section h4 {
+    font-size: 1.2em;
+    color: #6a0dad;
+    margin: 15px 0 10px 0;
+    font-weight: 600;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #6a0dad 0%, #8e2de2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(106, 13, 173, 0.2);
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(106, 13, 173, 0.3);
+}
+
+/* Address Styles */
+address {
+    text-align: center;
+    padding: 30px;
+    background: rgba(106, 13, 173, 0.05);
+    border-left: 4px solid #6a0dad;
+    margin: 30px auto;
+    max-width: 1200px;
+    font-style: normal;
+    border-radius: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Footer Styles */
+footer.site-footer {
+    background: linear-gradient(135deg, #6a0dad 0%, #8e2de2 100%);
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 0 -4px 15px rgba(106, 13, 173, 0.2);
+}
+
+footer.site-footer p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+/* Ask AI button in footer */
+.ask-ai-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    background: linear-gradient(90deg, #ff8a00 0%, #e52e71 100%);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(229, 46, 113, 0.24);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.ask-ai-btn:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 36px rgba(229, 46, 113, 0.32);
+}
+
+.ask-ai-btn:focus {
+    outline: 3px solid rgba(229,46,113,0.14);
+}
+
+/* Social buttons in footer */
+.social-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 999px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: transform 0.16s ease, box-shadow 0.16s ease, opacity 0.16s ease;
+}
+
+.social-btn.facebook {
+    background: #1877f2;
+    box-shadow: 0 8px 20px rgba(24,119,242,0.18);
+}
+
+.social-btn.instagram {
+    background: radial-gradient(circle at 30% 50%, #feda75 0%, #fa7e1e 25%, #d62976 50%, #962fbf 75%, #4f5bd5 100%);
+    box-shadow: 0 8px 20px rgba(214,41,118,0.14);
+}
+
+.social-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    opacity: 0.98;
+}
+
+/* Ask AI modal styles */
+#askai-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.askai-modal {
+    width: 100%;
+    max-width: 720px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(2,6,23,0.4);
+    padding: 18px;
+    transform: translateY(-8px);
+}
+
+.askai-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+}
+
+.askai-title { font-size:18px; font-weight:800; color:#1f2937; }
+.askai-close { background:transparent; border:none; cursor:pointer; font-size:18px; }
+
+.askai-body { margin-top:12px; }
+.askai-body textarea { width:100%; min-height:140px; padding:12px; border:1px solid #e5e7eb; border-radius:8px; font-size:14px; }
+
+.askai-actions { display:flex; gap:10px; margin-top:12px; justify-content:flex-end; }
+.askai-button { padding:10px 16px; border-radius:8px; border:none; cursor:pointer; font-weight:700; }
+.askai-button.primary { background: linear-gradient(90deg,#ff8a00,#e52e71); color:#fff; }
+.askai-button.ghost { background:transparent; color:#374151; border:1px solid #e5e7eb; }
+
+#askai-overlay.show { display:flex; }
+
+.askai-response { margin-top:12px; padding:12px; background:#f3f4f6; border-radius:8px; color:#111827; }
