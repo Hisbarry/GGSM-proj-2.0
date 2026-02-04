@@ -200,6 +200,11 @@ footer.site-footer p {
     box-shadow: 0 8px 20px rgba(214,41,118,0.14);
 }
 
+.social-btn.youtube {
+    background: #ff0000;
+    box-shadow: 0 8px 20px rgba(255,0,0,0.18);
+}
+
 .social-btn:hover {
     transform: translateY(-3px) scale(1.02);
     opacity: 0.98;
